@@ -1,4 +1,4 @@
-#  take 3 inputs from user and check which one is greater & it should check all the conditions
+# take 3 inputs from user and check which one is greater & it should check all the conditions
 
 a=int(input("Entr Fisrst no:"))
 b=int(input("Enter second no: "))
