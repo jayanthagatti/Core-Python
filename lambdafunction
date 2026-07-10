@@ -1,0 +1,73 @@
+# l=lambda num:num*num
+# k=l(5)
+# print(k)
+
+# def outer():
+#     print("inside outer")
+#     def inner():
+#         print("inside inner")
+#     inner()
+# outer()
+
+#global varible
+# a=10
+# def fun1():
+#     a=100
+#     b=200
+#     print(a)
+#     print(b)
+# def fun2():
+#     c=500
+#     print(a)
+#     print(c)
+# fun1()
+# fun2()
+
+#accessing and modifying a global variable
+# a=10
+# def fun1():
+#     global a
+#     a=100
+#     b=200
+#     print(a)
+#     print(b)
+# def fun2():
+#     global a
+#     a=150
+#     b=250
+#     print(a)
+#     print(b)
+# print(a)
+# fun1()
+# print(a)
+# fun2()
+# print(a)
+
+#non local variable
+# def outer():
+#     a=10
+#     b=20
+#     print(a)
+#     print(b)
+#     def inner():
+#         c=30
+#         d=40
+#         print(c)
+#         print(d)
+#     inner()
+# outer()
+
+#accessing and modifying a non local variable
+def outer():
+    a=10
+    b=20
+    print(a)
+    print(b)
+    def inner():
+        nonlocal a
+        a=30
+        b=40
+    print(a)
+    inner()
+    print(a)
+outer()
